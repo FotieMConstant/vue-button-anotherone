@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Button text="Go to link" link="http://fotiemconstant.github.io" />
+
+    <hr />
+    <VueButton text="fotiecode" link="http://fotiemconstant.github.io" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import Button from "./components/Vue-button.vue";
+import VueButton from "vue-button-anotherone";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Button,
+    VueButton,
+  },
+};
 </script>
 
 <style>
